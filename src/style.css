@@ -35,9 +35,13 @@ li {
   list-style: none;
 }
 
-button, h1, input {
+input {
+  border: none;
+  outline: none;
+}
+
+button, h1 {
   all: unset;
-  cursor: pointer;
 }
 
 .box {
