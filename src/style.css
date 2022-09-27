@@ -34,7 +34,8 @@ input {
   outline: none;
 }
 
-button,h1 {
+button,
+h1 {
   all: unset;
 }
 
