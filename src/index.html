@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>ToDo List</title>
 </head>
 <body>
-    <h1>Hello webpack!</h1>
+  <div class="container">
+    <div class="b-bottom box">
+      <h1 class="">Today's To Do</h1>
+      <button class="refresh">O</button>
+    </div>
+    <form class="form b-bottom">
+      <input type="text" class="box text-field" placeholder="Add to your list...">
+    </form>
+    <ul class="task-list">
+
+<!-- task item template (keep in to ease layout refactor/modifications)-->
+
+      <!-- <li class="task-item b-bottom box">
+        <input type="checkbox" class="checkbox" checked>
+        <span class="task-text">Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        <button class="delete">X</button>
+      </li> -->
+
+    </ul>
+    <div class="box clr-all">Clear all completed</div>
+  </div>
 </body>
 </html>
