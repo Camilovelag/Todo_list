@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from 'lodash'; // eslint-disable-line
 import './style.css';
 
 const taskList = document.querySelector('.task-list');
@@ -36,4 +36,3 @@ taskList.innerHTML = taskArr.map((task) => `<li id="task-${task.index}" class="t
   <span class="task-text">${task.description}</span>
   <button class="delete">X</button>
 </li>`).join('');
-
