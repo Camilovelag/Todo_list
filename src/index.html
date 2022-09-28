@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
+    <script src="https://kit.fontawesome.com/1097d30f85.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="container">
     <div class="b-bottom box">
       <h1 class="">Today's To Do</h1>
-      <button class="refresh btn">O</button>
+      <button type="button" class="refresh btn" onClick="window.location.reload();">
+        <img src="https://cdn-icons-png.flaticon.com/512/2805/2805359.png" alt="refresh-icon">
+      </button>
     </div>
     <form class="form b-bottom box" name="form" method="get">
       <input type="text" name="task" class="text-field full" placeholder="Add to your list..." required>
-      <button type="submit" class="submit btn">+</button>
+      <button type="submit" class="submit btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/8105/8105904.png" alt="enter-icon">
+      </button>
     </form>
     <ul class="task-list">
-
-<!-- task item template (keep in to ease layout refactor/modifications)-->
-
-      <!-- <li class="task-item b-bottom box">
-        <input type="checkbox" class="checkbox" checked>
-        <span class="task-text">Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
-        <button class="delete">X</button>
-      </li> -->
-
+      <!-- taskList appended here -->
     </ul>
     <div class="box clr-all">Clear all completed</div>
   </div>

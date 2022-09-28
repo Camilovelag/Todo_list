@@ -1,5 +1,3 @@
-import removeTask from "./remove.js";
-
 export default function displayTasks(e) {
 
   const taskList = document.querySelector('.task-list');
@@ -11,9 +9,13 @@ export default function displayTasks(e) {
     // taskItem.classList.add('task-item', 'b-bottom', 'box');
     taskItem.innerHTML = `<form class="task-form b-bottom box">
     <input name="completed" type="checkbox" class="checkbox">
-    <textarea name="description" class="task-text full">${task.description}</textarea>
-    <button type="button" class="delete btn">X</button>
-    <button type="submit" class="update btn">UP</button>
+    <textarea name="description" rows="1" class="task-text full">${task.description}</textarea>
+    <button type="button" class="delete btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/542/542724.png" alt="update-icon">
+    </button>
+    <button type="submit" class="update btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828743.png" alt="update-icon">
+    </button>
     </form>`;
     taskList.appendChild(taskItem);
 

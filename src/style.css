@@ -34,9 +34,8 @@ input {
   outline: none;
 }
 
-
-
-h1 {
+h1,
+textarea {
   all: unset;
 }
 
@@ -80,10 +79,13 @@ input::placeholder {
   background-color: #c0bdbd;
 }
 
-/* new styles */
-
-textarea {
-  all: unset;
+img {
   width: 80%;
+  height: 80%;
+  filter: opacity(50%);
+  padding: 5%;
+}
 
+.update {
+  margin-right: 1rem;
 }
