@@ -1,5 +1,6 @@
 export default function displayTasks() {
   const taskList = document.querySelector('.task-list');
+  
   let parsedArr = JSON.parse(localStorage.getItem('taskArr')) || [];
   taskList.innerHTML = '';
   parsedArr.map((task) => {
@@ -14,29 +15,32 @@ export default function displayTasks() {
     <img src="https://cdn-icons-png.flaticon.com/512/1828/1828743.png" alt="update-icon">
     </button>
     </form>`;
-    taskList.appendChild(taskItem);   
+    taskList.appendChild(taskItem);
+
     const deleteBtn = taskItem.querySelector('.delete');
     const updateBtn = taskItem.querySelector('.update');
     const updateText = taskItem.querySelector('.task-text');
+    const taskForm = taskItem.querySelector('.task-form');
+
     updateBtn.style.display = 'none';
+
     updateText.addEventListener('click', (e) => {
       e.preventDefault();
       updateBtn.style.display = 'block';
       deleteBtn.style.display = 'none';
       updateText.style.backgroundColor = '#f4f4f4';
     });
-    const taskForm = taskItem.querySelector('.task-form');
+
     taskForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const input = Object.fromEntries(
-        new FormData(e.target)
-      )
+      const input = Object.fromEntries(new FormData(e.target));
       task.description = input.description;
       localStorage.setItem('taskArr', JSON.stringify(parsedArr));
       updateBtn.style.display = 'none';
       deleteBtn.style.display = 'block';
       updateText.style.backgroundColor = '#fff';
     });
+
     deleteBtn.addEventListener('click', (e) => {
       e.preventDefault();
       let temp = parsedArr.filter((item) => item !== task);
@@ -50,5 +54,5 @@ export default function displayTasks() {
       taskList.removeChild(taskItem);
     });
     return taskList;
-  }); 
+  });
 }
