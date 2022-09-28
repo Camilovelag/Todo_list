@@ -9,10 +9,11 @@
   <div class="container">
     <div class="b-bottom box">
       <h1 class="">Today's To Do</h1>
-      <button class="refresh">O</button>
+      <button class="refresh btn">O</button>
     </div>
-    <form class="form b-bottom">
-      <input type="text" class="box text-field" placeholder="Add to your list...">
+    <form class="form b-bottom box" name="form" method="get">
+      <input type="text" name="task" class="text-field full" placeholder="Add to your list..." required>
+      <button type="submit" class="submit btn">+</button>
     </form>
     <ul class="task-list">
 

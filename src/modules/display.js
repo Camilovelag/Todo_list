@@ -19,11 +19,20 @@ export default function displayTasks(e) {
 
     
     // try to split this into a function
+    const deleteBtn = taskItem.querySelector('.delete');
+    const updateBtn = taskItem.querySelector('.update');
+    const updateText = taskItem.querySelector('.task-text');
 
-    // const updateText = taskItem.querySelector('.task-text');
-    // updateText.addEventListener('click', (e) => {
-    //   e.preventDefault();
-    // });
+    updateBtn.style.display = 'none';
+
+    updateText.addEventListener('click', (e) => {
+      e.preventDefault();
+      updateBtn.style.display = 'block';
+      deleteBtn.style.display = 'none';
+      updateText.style.backgroundColor = '#f4f4f4';
+    
+      
+    });
 
     const taskForm = taskItem.querySelector('.task-form');
     taskForm.addEventListener('submit', (e) => {
@@ -34,15 +43,14 @@ export default function displayTasks(e) {
       )
       task.description = input.description;
       localStorage.setItem('taskArr', JSON.stringify(parsedArr));
+      updateBtn.style.display = 'none';
+      deleteBtn.style.display = 'block';
+      updateText.style.backgroundColor = '#fff';
     });
 
 
-
-
-    const deleteBtn = taskItem.querySelector('.delete');
     deleteBtn.addEventListener('click', (e) => {
       e.preventDefault();
-
 
       let temp = parsedArr.filter((item) => item !== task);
       parsedArr = temp;
