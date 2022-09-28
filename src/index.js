@@ -1,7 +1,9 @@
 import _ from 'lodash'; // eslint-disable-line
 import './style.css';
 
-import displayTasks from './modules/display';
+import displayTasks from './modules/display.js';
+import addTask from './modules/add.js';
+import Task from './modules/task';
 
 const taskList = document.querySelector('.task-list');
 
@@ -11,40 +13,44 @@ const taskArr = [
     description: 'Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
     completed: false,
   },
-  {
-    index: 2,
-    description: 'Task 2 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    completed: false,
-  },
-  {
-    index: 3,
-    description: 'Task 3 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    completed: false,
-  },
-  {
-    index: 4,
-    description: 'Task 4 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    completed: false,
-  },
-  {
-    index: 5,
-    description: 'Task 5 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    completed: false,
-  },
+
 ];
 
-localStorage.setItem('taskArr', JSON.stringify(taskArr));
+// localStorage.setItem('taskArr', JSON.stringify(taskArr));
 
-// const displayTasks = () => {
+// modify below this line
 
-// let parsedArr = JSON.parse(localStorage.getItem('taskArr'));
+// class Task {
+//   constructor(index, description) {
+//     this.index = index;
+//     this.description = description;
+//     this.completed = false;
+//   }
+// }
 
-// taskList.innerHTML = parsedArr.map((task) => `<li id="task-${task.index}" class="task-item b-bottom box">
-//   <input type="checkbox" class="checkbox">
-//   <span class="task-text">${task.description}</span>
-//   <button class="delete">X</button>
-// </li>`).join('');
+const form = document.querySelector('.form');
 
-// };
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const input = Object.fromEntries(
+    new FormData(e.target)
+  )
 
+
+  const parsedArr = JSON.parse(localStorage.getItem('taskArr'));
+  const counter = parsedArr.length + 1;
+
+  const newTask = new Task(counter, input.task);
+  parsedArr.push(newTask);
+  localStorage.setItem('taskArr', JSON.stringify(parsedArr));
+
+  const taskfield = document.querySelector('.text-field');
+  taskfield.value = '';
+  displayTasks();
+});
+
+
+
+
+// modify above this line
 displayTasks();

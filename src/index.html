@@ -11,8 +11,9 @@
       <h1 class="">Today's To Do</h1>
       <button class="refresh">O</button>
     </div>
-    <form class="form b-bottom">
-      <input type="text" class="box text-field" placeholder="Add to your list...">
+    <form class="form b-bottom" name="form" method="get">
+      <input type="text" name="task" class="box text-field" placeholder="Add to your list..." required>
+      <button type="submit" class="submit btn">+</button>
     </form>
     <ul class="task-list">
 
