@@ -72,10 +72,18 @@ input::placeholder {
   width: 25px;
   height: 25px;
   border: none;
-  background-color: #fff;
+  background-color: #f4f4f4;
   border-radius: 5px;
 }
 
 .btn:hover {
   background-color: #c0bdbd;
+}
+
+/* new styles */
+
+textarea {
+  all: unset;
+  width: 80%;
+
 }
