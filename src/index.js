@@ -7,14 +7,14 @@ import Task from './modules/task.js';
 
 const taskList = document.querySelector('.task-list');
 
-const taskArr = [
-  {
-    index: 1,
-    description: 'Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    completed: false,
-  },
+// const taskArr = [
+//   {
+//     index: 1,
+//     description: 'Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
+//     completed: false,
+//   },
 
-];
+// ];
 
 // localStorage.setItem('taskArr', JSON.stringify(taskArr));
 
@@ -27,7 +27,6 @@ form.addEventListener('submit', (e) => {
   const input = Object.fromEntries(
     new FormData(e.target)
   )
-
   addTask(input.task);
   displayTasks();
 });

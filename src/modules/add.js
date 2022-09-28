@@ -2,7 +2,7 @@ import Task from './task';
 
 export default function addTask(task) {
 
-  const parsedArr = JSON.parse(localStorage.getItem('taskArr'));
+  const parsedArr = JSON.parse(localStorage.getItem('taskArr')) || [];
   const counter = parsedArr.length + 1;
 
   const newTask = new Task(counter, task);
