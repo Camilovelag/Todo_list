@@ -6,20 +6,6 @@ import addTask from './modules/add.js';
 import Task from './modules/task.js';
 
 const taskList = document.querySelector('.task-list');
-
-// const taskArr = [
-//   {
-//     index: 1,
-//     description: 'Task 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-//     completed: false,
-//   },
-
-// ];
-
-// localStorage.setItem('taskArr', JSON.stringify(taskArr));
-
-// modify below this line
-
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (e) => {
@@ -30,6 +16,8 @@ form.addEventListener('submit', (e) => {
   addTask(input.task);
   displayTasks();
 });
+
+// modify below this line
 
 // modify above this line
 displayTasks();
