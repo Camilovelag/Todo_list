@@ -1,3 +1,5 @@
+import removeTask from "./remove.js";
+
 export default function displayTasks(e) {
 
   const taskList = document.querySelector('.task-list');
@@ -16,20 +18,20 @@ export default function displayTasks(e) {
 
     const deleteBtn = taskItem.querySelector('.delete');
     deleteBtn.addEventListener('click', () => {
+
+
       let temp = parsedArr.filter((item) => item !== task);
-      // set a function that reassigns the index of the remaining tasks
       parsedArr = temp;
       temp = parsedArr.map((item) => {
         item.index = parsedArr.indexOf(item) + 1;
-
         return item;
       });
-    
       parsedArr = temp;
-
       localStorage.setItem('taskArr', JSON.stringify(parsedArr));
+
       taskList.removeChild(taskItem);
     });
+
 
     // fix how to display the new task array
     return taskList;
