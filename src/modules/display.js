@@ -1,6 +1,6 @@
 export default function displayTasks() {
   const taskList = document.querySelector('.task-list');
-  
+
   let parsedArr = JSON.parse(localStorage.getItem('taskArr')) || [];
   taskList.innerHTML = '';
   parsedArr.map((task) => {
