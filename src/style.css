@@ -48,9 +48,14 @@ textarea {
 }
 
 .clr-all {
-  color: #c0bdbd;
+  color: #808080;
   background-color: #f4f4f4;
   justify-content: center;
+  border: none;
+}
+
+.clr-all:hover {
+  background-color: #c0bdbd;
 }
 
 .checkbox {
@@ -68,11 +73,12 @@ input::placeholder {
 }
 
 .btn {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border: none;
   background-color: #f4f4f4;
   border-radius: 5px;
+  padding: 3px;
 }
 
 .btn:hover {
@@ -83,7 +89,6 @@ img {
   width: 80%;
   height: 80%;
   filter: opacity(50%);
-  padding: 5%;
 }
 
 .update {

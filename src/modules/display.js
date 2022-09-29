@@ -1,6 +1,8 @@
 export default function displayTasks() {
   const taskList = document.querySelector('.task-list');
 
+  // display stored tasks
+
   let parsedArr = JSON.parse(localStorage.getItem('taskArr')) || [];
   taskList.innerHTML = '';
   parsedArr.map((task) => {
@@ -19,16 +21,39 @@ export default function displayTasks() {
 
     const deleteBtn = taskItem.querySelector('.delete');
     const updateBtn = taskItem.querySelector('.update');
-    const updateText = taskItem.querySelector('.task-text');
+    const taskText = taskItem.querySelector('.task-text');
     const taskForm = taskItem.querySelector('.task-form');
+    const checkbox = taskItem.querySelector('.checkbox');
 
     updateBtn.style.display = 'none';
 
-    updateText.addEventListener('click', (e) => {
+    checkbox.checked = task.completed;
+    if (task.completed) {
+      taskText.style.textDecoration = 'line-through';
+    } else {
+      taskText.style.textDecoration = 'none';
+    }
+
+    // Update checkbox status
+
+    checkbox.addEventListener('change', () => {
+      task.completed = checkbox.checked;
+      localStorage.setItem('taskArr', JSON.stringify(parsedArr));
+
+      if (task.completed) {
+        taskText.style.textDecoration = 'line-through';
+      } else {
+        taskText.style.textDecoration = 'none';
+      }
+    });
+
+    // Update task description
+
+    taskText.addEventListener('click', (e) => {
       e.preventDefault();
       updateBtn.style.display = 'block';
       deleteBtn.style.display = 'none';
-      updateText.style.backgroundColor = '#f4f4f4';
+      taskText.style.backgroundColor = '#f4f4f4';
     });
 
     taskForm.addEventListener('submit', (e) => {
@@ -38,8 +63,10 @@ export default function displayTasks() {
       localStorage.setItem('taskArr', JSON.stringify(parsedArr));
       updateBtn.style.display = 'none';
       deleteBtn.style.display = 'block';
-      updateText.style.backgroundColor = '#fff';
+      taskText.style.backgroundColor = '#fff';
     });
+
+    // Delete task
 
     deleteBtn.addEventListener('click', (e) => {
       e.preventDefault();
