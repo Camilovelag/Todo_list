@@ -19,12 +19,31 @@ export default function displayTasks() {
 
     const deleteBtn = taskItem.querySelector('.delete');
     const updateBtn = taskItem.querySelector('.update');
-    const updateText = taskItem.querySelector('.task-text');
-    const taskForm = taskItem.querySelector('.task-form');
+    const taskText = taskItem.querySelector('.task-text');
+    const taskForm = taskItem.querySelector('.task-form');    
+    const checkbox = taskItem.querySelector('.checkbox');
 
     updateBtn.style.display = 'none';
 
-    updateText.addEventListener('click', (e) => {
+    checkbox.checked = task.completed;
+    if (task.completed) {
+      taskText.style.textDecoration = 'line-through';
+    } else {
+      taskText.style.textDecoration = 'none';
+    };  
+
+    checkbox.addEventListener('change', () => {
+      task.completed = checkbox.checked;
+      localStorage.setItem('taskArr', JSON.stringify(parsedArr));
+
+      if (task.completed) {
+        taskText.style.textDecoration = 'line-through';
+      } else {
+        taskText.style.textDecoration = 'none';
+      };
+    });
+
+    taskText.addEventListener('click', (e) => {
       e.preventDefault();
       updateBtn.style.display = 'block';
       deleteBtn.style.display = 'none';
