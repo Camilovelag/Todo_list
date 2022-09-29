@@ -47,7 +47,7 @@ export default function displayTasks() {
       e.preventDefault();
       updateBtn.style.display = 'block';
       deleteBtn.style.display = 'none';
-      updateText.style.backgroundColor = '#f4f4f4';
+      taskText.style.backgroundColor = '#f4f4f4';
     });
 
     taskForm.addEventListener('submit', (e) => {
@@ -57,7 +57,7 @@ export default function displayTasks() {
       localStorage.setItem('taskArr', JSON.stringify(parsedArr));
       updateBtn.style.display = 'none';
       deleteBtn.style.display = 'block';
-      updateText.style.backgroundColor = '#fff';
+      taskText.style.backgroundColor = '#fff';
     });
 
     deleteBtn.addEventListener('click', (e) => {
