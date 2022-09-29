@@ -34,8 +34,8 @@ input {
   outline: none;
 }
 
-button,
-h1 {
+h1,
+textarea {
   all: unset;
 }
 
@@ -63,6 +63,29 @@ input::placeholder {
   font-style: italic;
 }
 
-.text-field {
-  width: 90%;
+.full {
+  width: 100%;
+}
+
+.btn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #c0bdbd;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+  filter: opacity(50%);
+  padding: 5%;
+}
+
+.update {
+  margin-right: 1rem;
 }
