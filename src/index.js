@@ -2,6 +2,7 @@ import _ from 'lodash'; // eslint-disable-line
 import './style.css';
 import displayTasks from './modules/display.js';
 import addTask from './modules/add.js';
+import clearAll from './modules/clearAll.js';
 
 const form = document.querySelector('.form');
 
@@ -16,10 +17,12 @@ const clrAllBtn = document.querySelector('.clr-all');
 
 clrAllBtn.addEventListener('click', (e) => {
   e.preventDefault();
+  clearAll();
 
-  let parsedArr = JSON.parse(localStorage.getItem('taskArr'));
-  let temp = parsedArr.filter((item) => item.completed === false);
-  localStorage.setItem('taskArr', JSON.stringify(temp));
+
+  // let parsedArr = JSON.parse(localStorage.getItem('taskArr'));
+  // let temp = parsedArr.filter((item) => item.completed === false);
+  // localStorage.setItem('taskArr', JSON.stringify(temp));
   displayTasks(); 
 });
 
