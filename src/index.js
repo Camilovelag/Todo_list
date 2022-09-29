@@ -18,18 +18,7 @@ const clrAllBtn = document.querySelector('.clr-all');
 clrAllBtn.addEventListener('click', (e) => {
   e.preventDefault();
   clearAll();
-
-
-  // let parsedArr = JSON.parse(localStorage.getItem('taskArr'));
-  // let temp = parsedArr.filter((item) => item.completed === false);
-  // localStorage.setItem('taskArr', JSON.stringify(temp));
-  displayTasks(); 
+  displayTasks();
 });
-
-
-
-  
-
-
 
 displayTasks();

@@ -22,7 +22,7 @@ export default function displayTasks() {
     const deleteBtn = taskItem.querySelector('.delete');
     const updateBtn = taskItem.querySelector('.update');
     const taskText = taskItem.querySelector('.task-text');
-    const taskForm = taskItem.querySelector('.task-form');    
+    const taskForm = taskItem.querySelector('.task-form');
     const checkbox = taskItem.querySelector('.checkbox');
 
     updateBtn.style.display = 'none';
@@ -32,7 +32,7 @@ export default function displayTasks() {
       taskText.style.textDecoration = 'line-through';
     } else {
       taskText.style.textDecoration = 'none';
-    };
+    }
 
     // Update checkbox status
 
@@ -44,7 +44,7 @@ export default function displayTasks() {
         taskText.style.textDecoration = 'line-through';
       } else {
         taskText.style.textDecoration = 'none';
-      };
+      }
     });
 
     // Update task description
