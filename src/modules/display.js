@@ -1,6 +1,8 @@
 export default function displayTasks() {
   const taskList = document.querySelector('.task-list');
 
+  // display stored tasks
+
   let parsedArr = JSON.parse(localStorage.getItem('taskArr')) || [];
   taskList.innerHTML = '';
   parsedArr.map((task) => {
@@ -30,7 +32,9 @@ export default function displayTasks() {
       taskText.style.textDecoration = 'line-through';
     } else {
       taskText.style.textDecoration = 'none';
-    };  
+    };
+
+    // Update checkbox status
 
     checkbox.addEventListener('change', () => {
       task.completed = checkbox.checked;
@@ -42,6 +46,8 @@ export default function displayTasks() {
         taskText.style.textDecoration = 'none';
       };
     });
+
+    // Update task description
 
     taskText.addEventListener('click', (e) => {
       e.preventDefault();
@@ -59,6 +65,8 @@ export default function displayTasks() {
       deleteBtn.style.display = 'block';
       taskText.style.backgroundColor = '#fff';
     });
+
+    // Delete task
 
     deleteBtn.addEventListener('click', (e) => {
       e.preventDefault();
