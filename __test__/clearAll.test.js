@@ -1,21 +1,20 @@
-import addTask from '../src/modules/add.js';
+import mockLocalStorage from '../__mocks__/mockLocalStorage.js';
 import displayTasks from '../src/modules/display.js';
 import clearAll from '../src/modules/clearAll.js';
 
-test('Clear completed tasks', () => {
-  // Arrange
-  document.body.innerHTML = '<input type="text" name="task" class="text-field full" placeholder="Add to your list..." required> <ul class="task-list"> </ul>';
-  const task1 = 'New task 1 - lorem ipsum dolor sit amet';
-  addTask(task1);
-  displayTasks();
-  const checkbox = document.querySelector('.checkbox');
-  checkbox.click();
+describe('Clear completed tasks', () => {
+  test('Clear all completed tasks - tasks checked', () => {
+    // Arrange
+    mockLocalStorage();
+    const checkbox = document.querySelector('.checkbox');
+    checkbox.click();
 
-  // Act
-  clearAll();
-  displayTasks();
+    // Act
+    clearAll();
+    displayTasks();
 
-  // Assert
-  const list = document.querySelectorAll('textarea');
-  expect(list).toHaveLength(0);
+    // Assert
+    const list = document.querySelectorAll('textarea');
+    expect(list).toHaveLength(0);
+  });
 });
