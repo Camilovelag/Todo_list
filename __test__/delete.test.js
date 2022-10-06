@@ -16,6 +16,5 @@ describe('Add task', () => {
     // Assert
     const listElement = document.querySelectorAll('textarea');
     expect(listElement).toHaveLength(0);
-
   });
 });
