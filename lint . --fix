@@ -1,0 +1,225 @@
+[33mcommit 475895bb0ed4082c73cefe2daa4c56ea88d5a920[m[33m ([m[1;36mHEAD -> [m[1;32mtesting[m[33m, [m[1;31morigin/testing[m[33m)[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Thu Oct 6 11:40:03 2022 -0500
+
+    fix linter errors
+
+[33mcommit 69ac9335f530a83421cd94b757c3963693060709[m
+Author: hopeforkoami <hopeforkoami@gmail.com>
+Date:   Thu Oct 6 16:19:58 2022 +0000
+
+    Add delete test
+
+[33mcommit fe408e2b308cc7664e642cddd31bbaa349993eec[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Thu Oct 6 10:49:45 2022 -0500
+
+    Add test for Add-task feature
+
+[33mcommit d26db9c7fec33e1a0dde80b915ddc27f7c175118[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 296753e 31dd5a9
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Thu Sep 29 13:15:14 2022 -0500
+
+    Merge branch 'main' of https://github.com/Camilovelag/Todo_list
+
+[33mcommit 296753e828912391cee126af99189fffa06ffaa2[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Thu Sep 29 13:14:31 2022 -0500
+
+    add MIT.md
+
+[33mcommit 31dd5a9f76fe2cbdba7ea0167b464d90effa3b9e[m
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Thu Sep 29 13:04:18 2022 -0500
+
+    Add link to the webpage
+
+[33mcommit 542ce8f776ffa9cf734537c868a9283699adc477[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Thu Sep 29 12:55:34 2022 -0500
+
+    setup gh pages
+
+[33mcommit dfb85a3f0a13744767f32e6c9f453cfa6d3d75a7[m
+Merge: adaff36 632be77
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Thu Sep 29 08:38:13 2022 -0500
+
+    Merge pull request #3 from Camilovelag/interactive
+    
+    To Do list: interactive list
+
+[33mcommit 632be77b392c5f61c798e78dfb51c73d5a0bfb10[m[33m ([m[1;31morigin/interactive[m[33m)[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 20:44:48 2022 -0500
+
+    fix linter errors
+
+[33mcommit bc3fc1886445d82beae9ec848f10976bd6e14727[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 20:25:46 2022 -0500
+
+    comment functions
+
+[33mcommit 3ffebf63f0b690fb3813c5677d80cef904bbb274[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 20:19:38 2022 -0500
+
+    modularize clear-All feature
+
+[33mcommit 3e164044509a1027187a3cf1099557aa22737c4f[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 20:03:22 2022 -0500
+
+    add clear-all-completed feature
+
+[33mcommit 67e2e7c1fc4133de938b28473d4f66520aed4949[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 19:47:59 2022 -0500
+
+    add checkbox feature
+
+[33mcommit adaff36c743d7ec147ad069cfed4f0ff34a48714[m
+Merge: adf1f69 d515f41
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 19:09:41 2022 -0500
+
+    Merge pull request #2 from Camilovelag/Add-remove
+    
+    To Do list: add & remove
+
+[33mcommit d515f41706c1f960c8bbc49e8715f7b79063c68d[m[33m ([m[1;31morigin/Add-remove[m[33m)[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 17:50:16 2022 -0500
+
+    fix eslint error
+
+[33mcommit 3e50618f88396a6a63ceac5713c1404042badb7a[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 17:48:38 2022 -0500
+
+    fix linter errors
+
+[33mcommit 9ed08d3f3d592d0a573f4e8d7af81c016d28631b[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 17:38:50 2022 -0500
+
+    fix linter errors
+
+[33mcommit 4a6a0c90774b8d18689626bb83eeb061b0ab1694[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 17:24:09 2022 -0500
+
+    add icon to buttons
+
+[33mcommit 86a93df1bfd15bb52f39b10def4f87d8a6f96e80[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 16:37:37 2022 -0500
+
+    fix update layout
+
+[33mcommit 92e82fc08ee56f79133d2deb55349c57f0d42ba3[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 16:25:11 2022 -0500
+
+    add update feature
+
+[33mcommit a713d9af8eb0ff93769687d3bcbb93709566dd55[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 14:01:42 2022 -0500
+
+    Fix remove feature
+
+[33mcommit 44d5c1301c025e5abcf269488ffaa83a17909331[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 11:25:56 2022 -0500
+
+    Add 'reassign-index' feature
+
+[33mcommit ca3e3838e4e8008869f45cdef22f7413c42175a0[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 08:53:34 2022 -0500
+
+    Add remove feature
+
+[33mcommit c992695008ecc1a866fb81b6a54f6f637f0bbcd9[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 08:34:54 2022 -0500
+
+    refactor display.js - insert one by one li's
+
+[33mcommit fbf8f70b2403dede79479730607167e30f4a2698[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 07:25:57 2022 -0500
+
+    modularize add-task function
+
+[33mcommit 51f36473b314998df65399d8bf1b20209dba1ece[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 07:18:17 2022 -0500
+
+    create add function
+
+[33mcommit d7739b46af3780e2648898fb74021ae2cf2b7e86[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Wed Sep 28 06:02:36 2022 -0500
+
+    refator display-tasks as a module function
+
+[33mcommit adf1f69a335b237c1b1ffc3ce5a746e6f6f2a885[m
+Merge: 3da1d8c a7b539a
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 16:17:12 2022 -0500
+
+    Merge pull request #1 from Camilovelag/structure
+    
+    To Do list: list structure
+
+[33mcommit a7b539ad76d45bae25e91638794c3945418fd52a[m
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 15:30:24 2022 -0500
+
+    Update README.md
+
+[33mcommit 073936f4e906aa635956d586d83c6a64783f8429[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 14:35:58 2022 -0500
+
+    fix linter error
+
+[33mcommit 0a0b3e2b91b3b7d7156d4d68780589a231e1dfb8[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 14:33:51 2022 -0500
+
+    fix linter errors
+
+[33mcommit 2d9e521cd3e52ed23fda79c575d7a81f69fcb41d[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 14:25:22 2022 -0500
+
+    install linter
+
+[33mcommit 9b37f9577b78b13728624517651fdbe5db4f918a[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 14:14:10 2022 -0500
+
+    add tasks using index.js
+
+[33mcommit df46dec7df28f2880b2428fa7ec2cd531b3eb1b7[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 13:49:14 2022 -0500
+
+    style webpage
+
+[33mcommit 532cff98fdaa2b96427b0f6b04d003d5a22e3604[m
+Author: Camilovelag <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 12:31:44 2022 -0500
+
+    set html structure
+
+[33mcommit 3da1d8c12342e3c2fc453281ecfb0408c2de0820[m
+Author: Camilo Vela <camilo.vela.galindo@gmail.com>
+Date:   Tue Sep 27 12:03:52 2022 -0500
+
+    Initial commit
