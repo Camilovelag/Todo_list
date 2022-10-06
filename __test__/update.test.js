@@ -21,7 +21,6 @@ describe('Update task', () => {
   test('Update task description', () => {
     // Arrange
     const textArea = document.querySelector('.task-text');
-    textArea.click();
     textArea.value = 'Task1 updated';
 
     // Act

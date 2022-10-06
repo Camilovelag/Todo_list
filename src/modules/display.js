@@ -9,7 +9,7 @@ export default function displayTasks() {
     const taskItem = document.createElement('li');
     taskItem.innerHTML = `<form class="task-form b-bottom box">
     <input name="completed" type="checkbox" class="checkbox">
-    <textarea name="description" rows="1" class="task-text full">${task.description}</textarea>
+    <textarea name="description" rows="1" class="task-text full" required>${task.description}</textarea>
     <button type="button" class="delete btn">
     <img src="https://cdn-icons-png.flaticon.com/512/542/542724.png" alt="update-icon">
     </button>
